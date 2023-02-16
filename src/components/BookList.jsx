@@ -27,8 +27,8 @@ class BookList extends Component {
           {this.props.booksJson
             .filter((libroSingolo) => libroSingolo.title.toLowerCase().includes(this.state.cercaUnLibro))
             .map((libroSingolo, index) => (
-              <Col xs={12} md={3} key={`libroSingolo-${index} `}>
-                <SingleBook book={libroSingolo} />
+              <Col xs={12} md={3} key={`libroSingolo-${index}`}>
+                <SingleBook booksJson={libroSingolo} />
               </Col>
             ))}
         </Row>

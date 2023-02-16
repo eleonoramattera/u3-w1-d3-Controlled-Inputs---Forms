@@ -33,7 +33,7 @@ class SingleBook extends Component {
               onClick={() => this.setState({ selected: !this.state.selected })}
             />
             <Card.Body>
-              <Card.Title>{this.props.libro.title}</Card.Title>
+              <Card.Title>{this.props.booksJson.title}</Card.Title>
             </Card.Body>
           </Card>
         </Col>
