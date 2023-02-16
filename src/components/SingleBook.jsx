@@ -26,11 +26,13 @@ class SingleBook extends Component {
     return (
       <Row>
         <Col xs={12} md={4}>
-          <Card style={{ width: "200px", border: this.state.selected ? "2px solid green" : "2px solid black" }}>
+          <Card style={{ width: "200px", border: this.state.selected ? "2px solid green" : "1px solid black" }}>
+            {" "}
+            {/*rifletto il cambiamento dello stato */}
             <Card.Img
               variant="top"
               src={this.props.libro.img}
-              onClick={() => this.setState({ selected: !this.state.selected })}
+              onClick={() => this.setState({ selected: !this.state.selected })} //!mette il suo opposto in un booleano//
             />
             <Card.Body>
               <Card.Title>{this.props.booksJson.title}</Card.Title>
